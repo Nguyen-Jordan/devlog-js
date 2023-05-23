@@ -10,7 +10,7 @@ const dayOfWeek = myDate.getDay();
 const hour = myDate.getHours();
 
 function isWeekend(date) {
-    if (dayOfWeek > 5 || dayOfWeek == 5 && hour > 16 || dayOfWeek == 1 && hour < 9) {
+    if (dayOfWeek > 5 || dayOfWeek == 0 || dayOfWeek == 5 && hour > 16 || dayOfWeek == 1 && hour < 9) {
         console.log(weekEnd);
     } else {
         console.log(week);
