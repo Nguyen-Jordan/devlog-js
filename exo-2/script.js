@@ -5,13 +5,16 @@ const week = "Nous sommes en pleine semaine aujourd'hui.";
 const weekEnd = "Nous sommes en weekend aujourd'hui."
 
 const dayOfWeek = myDate.getDay();
+const hour = myDate.getHours();
+
+
 
 function isWeekend(date) {
-    if (dayOfWeek >5){
-        console.log(weekEnd);
-    } else {
-        console.log(week);
-    }
+    if (dayOfWeek > 5 || dayOfWeek == 5 && hour > 16) {
+    console.log(weekEnd);
+} else {
+    console.log(week);
+}
 }
 
-console.log('exo-2');
+console.log(isWeekend(myDate));
