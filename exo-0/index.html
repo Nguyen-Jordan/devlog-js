@@ -55,17 +55,19 @@
 
         console.log(city); // afficher la ville dans laquele Joe vit.     
 
-        function isRedHead (upperName, isRed) {// afficher si Joe est roux ou pas.
-            if (isRed){ // si la variable isRed est true 
-                console.log(upperName + " est roux.") // j'affiche dans la console : JOE est roux
+        function isRedHead (name, colorHead) {// afficher si Joe est roux ou pas.
+            if (colorHead){ // si la variable isRed est true 
+                console.log(name + " est roux.") // j'affiche dans la console : JOE est roux
             } else { // si est faux
-                console.log(upperName + " n'est pas roux.") // j'affiche dans la console : JOE n'est pas roux
+                console.log(name + " n'est pas roux.") // j'affiche dans la console : JOE n'est pas roux
             }
         }
+        
+        console.log(isRedHead(upperName, isRed));// j'affiche dans la console : JOE est roux
 
         /* Section 3 */
 
-        // console.log(myVariable);
+         console.log(myVariable); // Affiche une erreur : la variable myVariable n'est pas declarer.
 
         </script>
 
