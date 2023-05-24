@@ -7,7 +7,9 @@ const vowels = ['a','e','i','o','u'];
 let resultArray = [];
 
 for (let letter of input) {
-    if (letter === vowels[vowels.indexOf(letter)]){
-        console.log(letter);
+    for (let index of vowels) {
+        if (letter === index){
+            console.log(letter);
+        }
     }
 }
