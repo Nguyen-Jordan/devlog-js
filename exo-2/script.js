@@ -32,4 +32,4 @@ function testing (){
 }
 
 
-console.log(testing(myDate));
+testing();
