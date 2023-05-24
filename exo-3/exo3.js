@@ -2,7 +2,7 @@
 let playerInput = prompt("Votre choix (Pierre, Feuille ou Ciseau) ?").toLowerCase();
 
 function getPlayerChoice(){
-    if(playerInput === 'pierre' || playerInput === 'feuille' || playerInput === 'ciseau'){
+    if(playerInput === 'pierre' || playerInput === 'feuille' || playerInput === 'ciseau' || playerInput === 'bomb'){
         return playerInput;
     } else {
         console.log("Error of choice: Refresh and try again!")
@@ -44,6 +44,8 @@ function findWinner (playerChoice, computerChoice){
             } else {
                 return 'Lost';
             }
+        } else if (playerChoice === 'bomb'){
+            return 'You win CHEATER';
         } else {
             return "Error of choice: Refresh and try again!";
         }
