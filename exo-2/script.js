@@ -9,7 +9,7 @@ const weekEnd = "Nous sommes en weekend aujourd'hui."
 const dayOfWeek = myDate.getDay();
 const hour = myDate.getHours();
 
-function isWeekend(date) {
+function isWeekend() {
     if (dayOfWeek > 5 || dayOfWeek == 0 || dayOfWeek == 5 && hour > 16 || dayOfWeek == 1 && hour < 9) {
         console.log(weekEnd);
     } else {
