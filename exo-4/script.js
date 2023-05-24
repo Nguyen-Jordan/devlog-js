@@ -7,4 +7,5 @@ let secretMessage = [
     ];
    
 secretMessage.pop();
+secretMessage.push('to', 'program');
 console.log(secretMessage);
