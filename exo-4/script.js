@@ -8,4 +8,5 @@ let secretMessage = [
    
 secretMessage.pop();
 secretMessage.push('to', 'program');
+secretMessage[6]= 'right';
 console.log(secretMessage);
