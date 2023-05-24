@@ -1,3 +1,3 @@
 // you can write js here
 
-console.log('exo-5');
+let input = "Turpentine and turtles";
