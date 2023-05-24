@@ -20,26 +20,26 @@ function getComputerChoice (){
     }
 }
 
-function findWinner (){
-    if (getPlayerChoice() === getComputerChoice())
+function findWinner (playerChoice, computerChoice){
+    if (playerChoice === computerChoice)
     {
         return "Tied";
 
     } else {
-        if (getPlayerChoice() === 'pierre'){
-            if(getComputerChoice() === 'ciseau'){
+        if (playerChoice === 'pierre'){
+            if(computerChoice === 'ciseau'){
                 return 'Won';
             } else {
                 return 'Lost';
             }
-        } else if (getPlayerChoice() === 'feuille'){
-            if(getComputerChoice() === 'pierre'){
+        } else if (playerChoice === 'feuille'){
+            if(computerChoice === 'pierre'){
                 return 'Won';
             } else {
                 return 'Lost';
             }
-        } else if (getPlayerChoice() === 'ciseau'){
-            if(getComputerChoice() === 'feuille'){
+        } else if (playerChoice === 'ciseau'){
+            if(computerChoice === 'feuille'){
                 return 'Won';
             } else {
                 return 'Lost';
@@ -55,6 +55,7 @@ function playGame(){
     let computerChoice = getComputerChoice();
     console.log(uChoice);
     console.log(computerChoice);
+    console.log(findWinner(uChoice, computerChoice));
 }
 
 playGame();
