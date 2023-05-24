@@ -9,7 +9,9 @@ let resultArray = [];
 for (let letter of input) {
     for (let index of vowels) {
         if (letter === index){
-            console.log(letter);
+            resultArray.push(letter);
         }
     }
 }
+
+console.log(resultArray);
