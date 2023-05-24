@@ -14,4 +14,4 @@ for (let letter of input) {
     }
 }
 
-console.log(resultArray);
+console.log((resultArray.join("")).toUpperCase());
