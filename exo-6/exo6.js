@@ -51,4 +51,32 @@ team.players.push(
     }
 );
 
-console.log(team.players)
+team.games.push(
+    {
+        opponent: "Nuggets",
+        teamPoints: 111,
+        opponentPoints: 113
+    },{
+        opponent: "Warriors",
+        teamPoints: 106,
+        opponentPoints: 121
+    },{
+        opponent: "grizzlies",
+        teamPoints: 111,
+        opponentPoints: 101
+    },{
+        opponent: "Clippers",
+        teamPoints: 125,
+        opponentPoints: 118
+    },{
+        opponent: "Rockets",
+        teamPoints: 134,
+        opponentPoints: 109
+    },{
+        opponent: "Jazz",
+        teamPoints: 135,
+        opponentPoints: 133
+    }
+)
+
+console.log(team.games)
