@@ -61,7 +61,7 @@ team.games.push(
         teamPoints: 106,
         opponentPoints: 121
     },{
-        opponent: "grizzlies",
+        opponent: "Grizzlies",
         teamPoints: 111,
         opponentPoints: 101
     },{
@@ -93,5 +93,21 @@ team.addGames("Bulls", 121, 110);
 team.addGames("Timberwolves", 123, 111);
 team.addGames("Thunder", 116, 111);
 team.addGames("Suns", 122, 111);
+team.addGames("Nuggets", 103, 108);
+team.addGames("Warriors", 127, 97);
+team.addGames("Grizzlies", 112, 103);
+team.addGames("Jazz", 111, 87);
+team.addGames("Bulls", 102, 99);
+team.addGames("Rockets", 130, 140);
+team.addGames("Thunder", 105, 113);
+team.addGames("Suns", 117, 132);
 
-console.log(team.games);
+team.totalpointSeason = function(){
+    let points = 0;
+    for (let point of team.games){
+        points += point.teamPoints;
+    }
+    console.log("Les point total de la saison des Lakers sont "+ points);
+}
+
+console.log(team.totalpointSeason());
