@@ -81,8 +81,14 @@ team.games.push(
 
 team.addPlayers = function(fName, lName, ageP) {
     team.players.push({firstName: fName, lastName: lName, age: ageP})
-}
+};
 
 team.addPlayers("Dennis", "Schröder", 29);
 
-console.log(team.players)
+team.addGames = function(tName, tPoints, oPoints) {
+    team.games.push({opponent: tName, teamPoints: tPoints, opponentPoints: oPoints})
+};
+
+team.addGames("Bulls", 121, 110);
+
+console.log(team.games);
