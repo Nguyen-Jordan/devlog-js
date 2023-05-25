@@ -23,3 +23,6 @@ console.log(joeInfo.garage);
 console.log('----------------------------------');
 
 let team = {};
+
+team.players = [];
+team.games = [];
