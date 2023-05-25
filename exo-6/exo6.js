@@ -83,4 +83,6 @@ team.addPlayers = function(fName, lName, ageP) {
     team.players.push({firstName: fName, lastName: lName, age: ageP})
 }
 
-console.log()
+team.addPlayers("Dennis", "Schröder", 29);
+
+console.log(team.players)
