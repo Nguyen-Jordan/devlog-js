@@ -26,3 +26,29 @@ let team = {};
 
 team.players = [];
 team.games = [];
+
+team.players.push(
+    {
+        firstName: "LeBron",
+        lastName: "James",
+        age: 38
+    },{
+        firstName: "Anthony",
+        lastName: "Davis",
+        age: 30
+    },{
+        firstName: "Austin",
+        lastName: "Reaves",
+        age: 24
+    },{
+        firstName: "Jarred",
+        lastName: "Vanderbilt",
+        age: 24
+    },{
+        firstName: "D'Angelo",
+        lastName: "Russell",
+        age: 27
+    }
+);
+
+console.log(team.players)
