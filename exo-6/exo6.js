@@ -90,5 +90,8 @@ team.addGames = function(tName, tPoints, oPoints) {
 };
 
 team.addGames("Bulls", 121, 110);
+team.addGames("Timberwolves", 123, 111);
+team.addGames("Thunder", 116, 111);
+team.addGames("Suns", 122, 111);
 
 console.log(team.games);
