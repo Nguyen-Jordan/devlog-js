@@ -108,6 +108,22 @@ team.totalpointSeason = function(){
         points += point.teamPoints;
     }
     console.log("Les point total de la saison des Lakers sont "+ points);
-}
+};
+
+team.averagePoints = function(nTeam){
+    const teamPoints = [];
+    let oPoints = 0;
+    for (let point of team.games){
+        if(point.opponent === nTeam ){
+            teamPoints.push(point.opponentPoints);
+            oPoints += point.opponentPoints;
+        }
+    }
+    const average = oPoints / teamPoints.length;
+    
+    console.log("La moyenne des points de la saison des "+ nTeam +" sont "+ average);
+};
 
 console.log(team.totalpointSeason());
+
+console.log(team.averagePoints("Thunder"));
