@@ -137,8 +137,25 @@ const olderPlayer = () => {
     console.log(name.join(" ") +" is the veteran player on the team with "+ older +" years old");
 }
 
+team.players.sort(function(a, b) {
+    let firstNameA = a.firstName.toUpperCase();
+    let firstNameB = b.firstName.toUpperCase();
+    if (firstNameA < firstNameB) {
+      return -1;
+    }
+    if (firstNameA > firstNameB) {
+      return 1;
+    }
+    return 0;
+  });
+
+
 console.log(team.totalpointSeason());
 
 console.log(team.averagePoints("Thunder"));
 
 olderPlayer();
+
+console.log("--------------");
+
+console.log(team.players)
