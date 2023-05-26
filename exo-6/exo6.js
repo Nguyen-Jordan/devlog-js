@@ -124,6 +124,21 @@ team.averagePoints = function(nTeam){
     console.log("La moyenne des points de la saison des "+ nTeam +" sont "+ average);
 };
 
+const olderPlayer = () => {
+    let older = 0;
+    let name= [];
+    for (ages of team.players){
+        if (ages.age > older){
+            older = ages.age;
+            name.push(ages.firstName);
+            name.push(ages.lastName);
+        }
+    }
+    console.log(name.join(" ") +" is the veteran player on the team with "+ older +" years old");
+}
+
 console.log(team.totalpointSeason());
 
 console.log(team.averagePoints("Thunder"));
+
+olderPlayer();
