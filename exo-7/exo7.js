@@ -10,5 +10,12 @@ let translate = {
 
 for (let i=0;i<jsonDatas.length;i++){
     jsonDatas[i].translateType = translate[jsonDatas[i].type];
-    console.log(jsonDatas[i]);
+    let div = document.querySelector(".articleList");
+    div.innerHTML += `
+        <h1>${ jsonDatas[i].name }</h1>
+        <p>${
+            
+        }</p>
+    `
 }
+
